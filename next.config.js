@@ -17,6 +17,9 @@ const nextConfig = {
      * @see https://nextjs.org/docs/app/api-reference/next-config-js/basePath
      */
     basePath: "/pleistocenepeater-p.github.io",
+    /**
+     * Normally set this blank, GitHub Pages requires this ^ 
+     */
   
     /**
      * Disable server-based image optimization. Next.js does not support
