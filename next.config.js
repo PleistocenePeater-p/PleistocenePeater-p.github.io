@@ -16,9 +16,9 @@ const nextConfig = {
      *
      * @see https://nextjs.org/docs/app/api-reference/next-config-js/basePath
      */
-    basePath: "/pleistocenepeater-p.github.io",
+    basePath: "",
     /**
-     * Normally set this blank, GitHub Pages requires this ^ 
+     * Normally set this blank, GitHub Pages requires this: /pleistocenepeater-p.github.io^ 
      */
   
     /**
