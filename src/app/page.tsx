@@ -1,4 +1,5 @@
 // `app/page.tsx` is the UI for the `/` URL
+import Main from "@/components/Main"
 import Navbar from "@/components/Navbar"
 import Head from "next/head"
 export default function Page() {
@@ -8,7 +9,8 @@ export default function Page() {
         <title>Alex Hughes | Fullstack Developer</title>
       </Head>
 
-    <Navbar></Navbar>
+    <Navbar />
+    <Main />
     </div>
   )
 }
