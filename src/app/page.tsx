@@ -1,6 +1,8 @@
 // `app/page.tsx` is the UI for the `/` URL
+import About from "@/components/About"
 import Main from "@/components/Main"
 import Navbar from "@/components/Navbar"
+import Skills from "@/components/Skills"
 import Head from "next/head"
 export default function Page() {
   return (
@@ -11,11 +13,8 @@ export default function Page() {
 
     <Navbar />
     <Main />
+    <About />
+    <Skills />
     </div>
   )
 }
-{
-  
-/* <p>Let's build something excellent.</p>
-<p>My name is Alex Hughes.</p>
-<p>I'm a Next.js developer with a passion for efficiency and clean design.</p> */}

@@ -3,7 +3,7 @@ import { AiOutlineMail } from 'react-icons/ai'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 
-function Main() {
+export default function Main() {
   return (
     <div className='w-full h-screen text-center'>
         <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
@@ -30,5 +30,3 @@ function Main() {
     </div>
   )
 }
-
-export default Main
