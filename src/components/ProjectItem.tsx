@@ -1,9 +1,16 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { StaticImageData } from 'next/image'
 
+type Props = {
+  title: string
+  backgroundImg: StaticImageData
+  builtWith: string
+  projectUrl: string
+}
 
-const ProjectItem = ({title, backgroundImg, builtWith, projectUrl}) => {
+const ProjectItem = ({title, backgroundImg, builtWith, projectUrl}: Props) => {
   return (
     <div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-300 rounded-xl p-4 group hover:bg-gradient-to-r from-[#31bab1] to-[#34ebdb]'>
         <Image className='rounded-xl group-hover:opacity-10' src={backgroundImg} alt='/' />
