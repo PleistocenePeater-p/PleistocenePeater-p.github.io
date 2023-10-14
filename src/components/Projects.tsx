@@ -23,7 +23,7 @@ function Projects() {
           <ProjectItem
             title='Kavorka'
             backgroundImg={kavorka}
-            builtWith='MongoDB | Express | React | Node'
+            builtWith='MongoDB | Express | Node'
             projectUrl="/kavorka"
           />
         </div>
