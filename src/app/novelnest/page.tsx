@@ -19,32 +19,30 @@ const page = () => {
                 </div>
             </div>
 
-            <div className='max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8'>
+            <div className='mb-8 max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8'>
                 <div className='col-span-4'>
                     <p>Project</p>
                     <h2>Overview</h2>
-                    <p className='mt-2'>Kavorka was designed for remote strength and conditioning coaches to assign their clients to custom, individual workouts.
-                        This was an early project in my exposure to JavaScript, Express and Node, and CRUD principles. This is also where I first learned how to use Google OAuth to authenticate users and conditionally render objects on a page.
-                        Kavorka was a fun opportunity to explore Google Fonts and CSS keyframes, which prompted an enduring interest in (and respect for) good styling and UX.
+                    <p className='mt-2'>Novel Nest is an app for e-book readers in need of a follow-up book. Users sign up and subscribe to a genre of their choice by submitting credit card info.
+                        Novel Nest was a collaboration by three remote developers, employing Python, Django, and PostgreSQL. I enjoyed using <span className='underline'><Link href='https://materializecss.com/'>Materialize CSS</Link></span> for front-end styling and coordinated Django migrations into our PostgreSQL database.
+                        Google Books API makes this app possible, allowing for much functionality and potential refactoring.
+                        Our team maintained clear communication throughout the development life cycle and completed this project ahead of schedule.
                     </p>
-                    <Link href='https://mauve-piranha-fez.cyclic.app/'><button className='px-8 py-2 mt-4 mr-8'>App</button></Link>
-                    <Link href='https://github.com/PleistocenePeater-p/SEI-Project-2'><button className='px-8 py-2 mt-4 '>GitHub</button></Link>
+                    <Link href='https://novelnest.fly.dev/'><button className='px-8 py-2 mt-4 mr-8'>App</button></Link>
+                    <Link href='https://github.com/egwilborn/project-4-novel-nest'><button className='px-8 py-2 mt-4 '>GitHub</button></Link>
                 </div>
                 <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
                     <div className='p-2'>
                         <p className='text-center font-bold pb-2'>Technologies</p>
                         <div className='grid grid-cols-3 md:grid-cols-1'>
                             <p className='text-gray-600 py-2 flex items-center'>
-                                <RiRadioButtonFill className='pr-1'/> MongoDB
+                                <RiRadioButtonFill className='pr-1'/> Python
                             </p>
                             <p className='text-gray-600 py-2 flex items-center'>
-                                <RiRadioButtonFill className='pr-1'/> Express
+                                <RiRadioButtonFill className='pr-1'/> Django
                             </p>
                             <p className='text-gray-600 py-2 flex items-center'>
-                                <RiRadioButtonFill className='pr-1'/> Node.js
-                            </p>
-                            <p className='text-gray-600 py-2 flex items-center'>
-                                <RiRadioButtonFill className='pr-1'/> JavaScript
+                                <RiRadioButtonFill className='pr-1'/> PostgreSQL
                             </p>
                             <p className='text-gray-600 py-2 flex items-center'>
                                 <RiRadioButtonFill className='pr-1'/> HTML5
@@ -53,7 +51,7 @@ const page = () => {
                                 <RiRadioButtonFill className='pr-1'/> CSS3
                             </p>
                             <p className='text-gray-600 py-2 flex items-center'>
-                                <RiRadioButtonFill className='pr-1'/> Google OAuth
+                                <RiRadioButtonFill className='pr-1'/> Materialize CSS
                             </p>
                         </div>
                     </div>

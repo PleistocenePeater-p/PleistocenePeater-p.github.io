@@ -13,17 +13,17 @@ const page = () => {
             <div className='w-screen h-[50vh] relative'>
                 <div className='absolute top-0 left-0 w-full h-[50vh] bg-black/70 z-10' />
                 <Image className='absolute z-1' layout='fill' objectFit='cover' src={kavorkaImg} alt='/' />
-                <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[50%] text-white z-10 p-2'>
+                <div className='absolute top-[50%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[50%] text-white z-10 p-2'>
                     <h2 className='py-2'>Kavorka</h2>
                     <h3>MongoDB | Express | Node</h3>
                 </div>
             </div>
 
-            <div className='max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8'>
+            <div className='mb-8 max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8'>
                 <div className='col-span-4'>
                     <p>Project</p>
                     <h2>Overview</h2>
-                    <p className='mt-2'>Kavorka was designed for remote strength and conditioning coaches to assign their clients to custom, individual workouts.
+                    <p className='mt-2'>Kavorka is designed for remote strength and conditioning coaches to assign their clients to custom, individual workouts.
                         This was an early project in my exposure to JavaScript, Express and Node, and CRUD principles. This is also where I first learned how to use Google OAuth to authenticate users and conditionally render objects on a page.
                         Kavorka was a fun opportunity to explore Google Fonts and CSS keyframes, which prompted an enduring interest in (and respect for) good styling and UX.
                     </p>

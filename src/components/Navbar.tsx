@@ -10,6 +10,7 @@ import { BsFillPersonLinesFill } from 'react-icons/bs'
 export default function Navbar() {
   const [nav, setNav] = useState(false)
   const [shadow, setShadow] = useState(false)
+  const [navBg, setNavBg] = useState('#ffffff');
   const handleNav = () => {
     setNav(!nav);
   };
@@ -27,6 +28,7 @@ export default function Navbar() {
 
   return (
     <div
+      style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
           ? "fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300"
