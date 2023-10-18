@@ -26,18 +26,22 @@ const Contact = () => {
               </div>
               <div>
                 <h2 className="py-2">Alex Hughes</h2>
-                <p>Available for full-time and contract positions.</p>
-                <p className="py-4">Fullstack Developer</p>
+                <p className="text-xl">Fullstack Developer</p>
+                <p className='py-2'>Available for full-time and contract positions.</p>
               </div>
             <div>
               <p className="uppercase pt-8">Connect</p>
               <div className='flex items-center justify-between py-4'>
-                <div className="rounded-full shadow-lg shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                  <FaLinkedinIn />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                  <FaGithub />
-                </div>
+                <Link href='https://www.linkedin.com/in/alex-hughes-ah77/'>
+                  <div className='rounded-full shadow-lg shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                    <FaLinkedinIn />
+                  </div>
+                </Link>
+                <Link href='https://github.com/PleistocenePeater-p'>
+                  <div className='rounded-full shadow-lg shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                    <FaGithub />
+                  </div>
+                </Link>
                 <div className="rounded-full shadow-lg shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                   <AiOutlineMail />
                 </div>
