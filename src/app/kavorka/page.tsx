@@ -13,7 +13,7 @@ const page = () => {
             <div className='w-screen h-[50vh] relative'>
                 <div className='absolute top-0 left-0 w-full h-[50vh] bg-black/70 z-10' />
                 <Image className='absolute z-1' layout='fill' objectFit='cover' src={kavorkaImg} alt='/' />
-                <div className='absolute top-[50%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[50%] text-white z-10 p-2'>
+                <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[50%] text-white z-10 p-2'>
                     <h2 className='py-2'>Kavorka</h2>
                     <h3>MongoDB | Express | Node</h3>
                 </div>
@@ -58,7 +58,7 @@ const page = () => {
                         </div>
                     </div>
                 </div>
-                <Link href='/'>
+                <Link href='/#projects'>
                     <p className='underline cursor-pointer'>Home</p>
                 </Link>
             </div>
