@@ -9,10 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-pdf-viewer/core": "^3.12.0",
     "next": "latest",
+    "pdfjs-dist": "^3.11.174",
     "react": "latest",
     "react-dom": "latest",
-    "react-icons": "^4.11.0"
+    "react-icons": "^4.11.0",
+    "react-pdf": "^7.5.1"
   },
   "devDependencies": {
     "@types/node": "latest",
@@ -20,6 +23,7 @@
     "@types/react-dom": "latest",
     "autoprefixer": "latest",
     "postcss": "latest",
+    "raw-loader": "^4.0.2",
     "tailwindcss": "latest",
     "typescript": "latest"
   }

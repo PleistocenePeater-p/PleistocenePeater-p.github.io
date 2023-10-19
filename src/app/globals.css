@@ -7,6 +7,21 @@ html {
   scroll-behavior: smooth;
 }
 
+.pdf-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 100% of the viewport height */
+  width: 100vw;
+}
+
+.pdf-iframe {
+  width: 100vmax;
+  height: 100%;
+  border: none; /* Remove the iframe border, if any */
+}
+
+
 @layer base {
   body {
     @apply bg-[#ffffff] text-[#1f2937] tracking-wide

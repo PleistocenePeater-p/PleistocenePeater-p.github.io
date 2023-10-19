@@ -31,7 +31,7 @@ const Contact = () => {
               </div>
             <div>
               <p className="uppercase pt-8">Connect</p>
-              <div className='flex items-center justify-between py-4'>
+              <div className='flex items-center justify-center space-x-6 py-4'>
                 <Link href='https://www.linkedin.com/in/alex-hughes-ah77/'>
                   <div className='rounded-full shadow-lg shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                     <FaLinkedinIn />
@@ -42,12 +42,12 @@ const Contact = () => {
                     <FaGithub />
                   </div>
                 </Link>
-                <div className="rounded-full shadow-lg shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                {/* <div className="rounded-full shadow-lg shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                   <AiOutlineMail />
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                   <BsFillPersonLinesFill />
-                </div>
+                </div> */}
               </div>
             </div>
             </div>

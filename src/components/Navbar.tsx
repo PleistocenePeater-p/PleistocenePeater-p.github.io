@@ -47,6 +47,9 @@ export default function Navbar() {
             <Link href="/#about">
               <li className="ml-10 text-sm uppercase hover:border-b">About</li>
             </Link>
+            <Link href="/resume">
+              <li className="ml-10 text-sm uppercase hover:border-b">Resume</li>
+            </Link>
             <Link href="/#skills">
               <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
             </Link>
@@ -104,6 +107,9 @@ export default function Navbar() {
               <Link href="/#about">
                 <li onClick={()=> setNav(false)} className="py-4 text-sm">About</li>
               </Link>
+              <Link href="/resume">
+                <li onClick={()=> setNav(false)} className="py-4 text-sm">Resume</li>
+              </Link>
               <Link href="/#skills">
                 <li onClick={()=> setNav(false)} className="py-4 text-sm">Skills</li>
               </Link>
@@ -114,27 +120,27 @@ export default function Navbar() {
                 <li onClick={()=> setNav(false)} className="py-4 text-sm">Contact</li>
               </Link>
             </ul>
-            <div className="pt-40">
+            <div className="pt-10">
               <p className="uppercase tracking-widest text-[#31bab1]">
                 Connect
               </p>
-              <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
+              <div className="flex items-center justify-center space-x-8 my-4 w-full sm:w-[80%]">
                 <Link href='https://www.linkedin.com/in/alex-hughes-ah77/'>
-                  <div className="rounded-full shadow-lg shadow-gray-300 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                  <div className="rounded-full shadow-lg shadow-gray-300 p-6 cursor-pointer hover:scale-105 ease-in duration-300">
                     <FaLinkedinIn />
                   </div>
                 </Link>
                 <Link href='https://github.com/PleistocenePeater-p'>
-                  <div className="rounded-full shadow-lg shadow-gray-300 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                  <div className="rounded-full shadow-lg shadow-gray-300 p-6 cursor-pointer hover:scale-105 ease-in duration-300">
                     <FaGithub />
                   </div>
                 </Link>
-                <div className="rounded-full shadow-lg shadow-gray-300 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                {/* <div className="rounded-full shadow-lg shadow-gray-300 p-6 cursor-pointer hover:scale-105 ease-in duration-300">
                   <AiOutlineMail />
                 </div>
-                <div className="rounded-full shadow-lg shadow-gray-300 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                <div className="rounded-full shadow-lg shadow-gray-300 p-6 cursor-pointer hover:scale-105 ease-in duration-300">
                   <BsFillPersonLinesFill />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
