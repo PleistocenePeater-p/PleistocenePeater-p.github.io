@@ -1,22 +1,10 @@
-"use client";
-
 import Link from 'next/link'
 import React from 'react'
 // import { AiOutlineMail } from 'react-icons/ai'
 // import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi'
-
-async function handleSubmit(event: any) {
-  event.preventDefault();
-  const data = {
-    name: String(event.target.name.value),
-    phone: String(event.target.name.value),
-    email: String(event.target.name.value),
-    subject: String(event.target.name.value),
-    message: String(event.target.name.value),
-  }
-}
+import { ContactForm } from './ContactForm'
 
 const Contact = () => {
   return (
@@ -69,31 +57,7 @@ const Contact = () => {
           {/* right */}
           <div className='col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4'>
             <div className='p-4'>
-                <form onSubmit={handleSubmit}>
-                    <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
-                        <div className='flex flex-col'>
-                            <label className='uppercase text-sm py-2'>Name</label>
-                            <input name='name' maxLength={100} required className='border-2 rounded-lg p-3 flex border-gray-300' type="text" />
-                        </div>
-                        <div className='flex flex-col'>
-                            <label className='uppercase text-sm py-2'>Phone Number</label>
-                            <input name='phone' className='border-2 rounded-lg p-3 flex border-gray-300' type="text" />
-                        </div>
-                    </div>
-                    <div className='flex flex-col py-2'>
-                        <label className='uppercase text-sm py-2'>Email</label>
-                        <input name='email' maxLength={100} required className='border-2 rounded-lg p-3 flex border-gray-300' type="email" />
-                    </div>
-                    <div className='flex flex-col py-2'>
-                        <label className='uppercase text-sm py-2'>Subject</label>
-                        <input name='subject' maxLength={100} required className='border-2 rounded-lg p-3 flex border-gray-300' type="text" />
-                    </div>
-                    <div className='flex flex-col py-2'>
-                        <label className='uppercase text-sm py-2'>Message</label>
-                        <textarea name='message' minLength={10} maxLength={500} required className='border-2 rounded-lg p-3 border-gray-300' rows={10}></textarea>
-                    </div>
-                    <button className='w-full p-4 text-gray-100 mt-4'>Send</button>
-                </form>
+                <ContactForm />
             </div>
           </div>
         </div>

@@ -11,6 +11,7 @@
   "dependencies": {
     "@react-pdf-viewer/core": "^3.12.0",
     "next": "latest",
+    "nodemailer": "^6.9.7",
     "pdfjs-dist": "^3.11.174",
     "react": "latest",
     "react-dom": "latest",
