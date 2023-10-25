@@ -7,9 +7,23 @@ export const ContactForm = () => {
   const [email, setEmail] = useState("");
   const [msg, setMsg] = useState("");
 
-  const onSubmit = (e: FormEvent) => {
+  const onSubmit = async (e: FormEvent) => {
     e.preventDefault()
-    console.log("Data:", name, email, msg)
+    try {
+        const res = await fetch ("/api/contact", {
+            method: "POST",
+            body: JSON.stringify({
+                name, 
+                email, 
+                msg,
+            }),
+            headers: {
+                "content-type": "application/json",
+            }
+        })
+    } catch (error: any) {
+        console.error("Error", error)
+    }
   }
 
   return (
