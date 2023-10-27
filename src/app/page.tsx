@@ -5,14 +5,15 @@ import Main from "@/components/Main"
 import Navbar from "@/components/Navbar"
 import Projects from "@/components/Projects"
 import Skills from "@/components/Skills"
-import Head from "next/head"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Alex Hughes | Fullstack Developer"
+}
+
 export default function Page() {
   return (
     <div>
-      <Head>
-        <title>Alex Hughes | Fullstack Developer</title>
-      </Head>
-
     <Navbar />
     <Main />
     <About />

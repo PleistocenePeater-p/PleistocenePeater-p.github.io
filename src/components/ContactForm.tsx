@@ -10,7 +10,7 @@ export const ContactForm = () => {
   const onSubmit = async (e: FormEvent) => {
     e.preventDefault()
     try {
-        const res = await fetch ("/api/contact", {
+        const r = await fetch ("/api/contact", {
             method: "POST",
             body: JSON.stringify({
                 name, 
@@ -20,7 +20,15 @@ export const ContactForm = () => {
             headers: {
                 "content-type": "application/json",
             }
-        })
+        });
+
+        const res = await r.json();
+        if (res.success) {
+            alert("Email sent")
+        } else {
+            throw new Error();
+        }
+
     } catch (error: any) {
         console.error("Error", error)
     }
