@@ -8,7 +8,7 @@ type Data = {
     success: boolean;
 }
 
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+export default async function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
 
 //   console.log("Data", req.body);
 //   const body = JSON.parse(req.body);
@@ -40,7 +40,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                 from: "from.alex@fullstack-alex.com", //verified sender
                 subject: "New Message",
                 text: msg,
-                html: "<strong>Nice.</strong",
+                html: "<strong>Nice.</strong>",
             })
             res.status(200).json({ success: true });
         } catch (e) {
