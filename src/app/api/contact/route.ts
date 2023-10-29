@@ -10,7 +10,7 @@ type Data = {
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
 
-//   console.log("Data", req.body);
+  console.log("-Server console log- Data: ", JSON.parse(req.body));
 //   const body = JSON.parse(req.body);
 
 //   // using Twilio SendGrid's v3 Node.js Library

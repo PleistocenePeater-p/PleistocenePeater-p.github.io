@@ -1,6 +1,7 @@
 "use client"
 
 import { FormEvent, useState } from "react";
+import { NextResponse } from "next/server";
 
 export const ContactForm = () => {
   const [name, setName] = useState("");
@@ -35,7 +36,7 @@ export const ContactForm = () => {
   }
 
   return (
-    <form onSubmit={onSubmit}>
+    <form onSubmit={onSubmit} method="POST">
       {/* <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
                 <div className='flex flex-col'>
                     <label className='uppercase text-sm py-2'>Name</label>
