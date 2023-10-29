@@ -2,14 +2,22 @@
 
 import { FormEvent, useState } from "react";
 import { NextResponse } from "next/server";
+import { useRouter } from "next/navigation";
 
-export const ContactForm = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [msg, setMsg] = useState("");
+const initState = {
+    name: "",
+    email: "",
+    msg: "",
+}
 
-  const onSubmit = async (e: FormEvent) => {
+export default function ContactForm() {
+    const [data, setData] = useState(initState)
+    const router = useRouter()
+
+  const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
+    console.log(JSON.stringify(data))
+    const { name, email, msg } = data
     try {
         const r = await fetch ("/api/contact", {
             method: "POST",
@@ -50,8 +58,7 @@ export const ContactForm = () => {
       <div className="flex flex-col py-2">
         <label className="uppercase text-sm py-2">Name</label>
         <input
-          value={name}
-          onChange={(e) => setName(e.target.value)}
+        //   onChange={(e) => setName(e.target.value)}
           name="name"
           maxLength={100}
           required
@@ -62,8 +69,7 @@ export const ContactForm = () => {
       <div className="flex flex-col py-2">
         <label className="uppercase text-sm py-2">Email</label>
         <input
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
+        //   onChange={(e) => setEmail(e.target.value)}
           name="email"
           maxLength={100}
           required
@@ -78,8 +84,7 @@ export const ContactForm = () => {
       <div className="flex flex-col py-2">
         <label className="uppercase text-sm py-2">Message</label>
         <textarea
-          value={msg}
-          onChange={(e) => setMsg(e.target.value)}
+        //   onChange={(e) => setMsg(e.target.value)}
           name="message"
           minLength={10}
           maxLength={500}
