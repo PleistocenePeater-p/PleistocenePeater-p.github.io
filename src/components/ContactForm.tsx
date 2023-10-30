@@ -19,7 +19,7 @@ export default function ContactForm() {
     console.log(JSON.stringify(data))
     const { name, email, msg } = data
     try {
-        const r = await fetch ("/api/contact", {
+        const r = await fetch ("http://localhost:3000/api/contact", {
             method: "POST",
             body: JSON.stringify({
                 name, 
@@ -44,7 +44,7 @@ export default function ContactForm() {
   }
 
   return (
-    <form onSubmit={onSubmit} method="POST">
+    <form onSubmit={onSubmit}>
       {/* <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
                 <div className='flex flex-col'>
                     <label className='uppercase text-sm py-2'>Name</label>

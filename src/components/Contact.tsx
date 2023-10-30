@@ -4,7 +4,7 @@ import React from 'react'
 // import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi'
-import { ContactForm } from './ContactForm'
+import ContactForm from './ContactForm'
 
 const Contact = () => {
   return (
