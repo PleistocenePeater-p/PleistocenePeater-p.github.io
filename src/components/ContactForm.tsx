@@ -1,52 +1,53 @@
-"use client"
+"use client";
 
 import { ChangeEvent, FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 
 const initState = {
-    name: "",
-    email: "",
-    msg: "",
-}
+  name: "",
+  email: "",
+  msg: "",
+};
 
 export default function ContactForm() {
-    const [data, setData] = useState(initState)
-    const router = useRouter()
+  const [data, setData] = useState(initState);
+  const router = useRouter();
 
   const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    console.log("Here's the data baby", JSON.stringify(data))
-    const { name, email, msg } = data
+    e.preventDefault();
+    console.log("HTMLFormElement Data: ", JSON.stringify(data));
+    const { name, email, msg } = data;
     try {
-        const res = await fetch("/api/contact", {
-            method: "POST",
-            headers: {
-                "content-type": "application/json",
-            },
-            body: JSON.stringify({
-                name, 
-                email, 
-                msg,
-            })
-        });
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          msg,
+        }),
+      });
 
-        const result = await res.json();
-        console.log(result)
-
+      const result = await res.json();
+      console.log(result);
     } catch (error: any) {
-        console.error("Error", error)
+      console.error("Error", error);
     }
-  }
+  };
 
-  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const name = e.target.name
-    setData(prevData => ({
-        ...prevData,
-        [name]: e.target.value
-    }))
-  }
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const name = e.target.name;
+    setData((prevData) => ({
+      ...prevData,
+      [name]: e.target.value,
+    }));
+  };
 
-  const canSave = [...Object.values(data)].every(Boolean)
+  const canSave = [...Object.values(data)].every(Boolean);
 
   return (
     <form onSubmit={onSubmit}>
@@ -100,10 +101,9 @@ export default function ContactForm() {
           onChange={handleChange}
         ></textarea>
       </div>
-      <button 
-          className="w-full p-4 text-gray-100 mt-4" 
-          disabled={!canSave}
-        >Send</button>
+      <button className="w-full p-4 text-gray-100 mt-4" disabled={!canSave}>
+        Send
+      </button>
     </form>
   );
-};
+}
