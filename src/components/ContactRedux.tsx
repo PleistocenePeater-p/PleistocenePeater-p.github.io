@@ -13,7 +13,7 @@ export default function ContactRedux() {
         </p>
         <h2 className="py-4">Get In Touch</h2>
 
-        <div className="w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4 flex items-center">
+        <div className="w-full h-full shadow-xl shadow-gray-200 rounded-xl p-4 flex items-center">
           <div className="lg:p-4 h-full mx-auto">
             <div className="grid md:grid-cols-2 gap-4">
               <div>
