@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import { AiOutlineMail } from 'react-icons/ai'
-import { BsFillPersonLinesFill } from 'react-icons/bs'
+// import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 
 export default function Main() {
@@ -12,7 +12,7 @@ export default function Main() {
                 <p className='uppercase text-sm tracking-widest text-gray-600'>Let's build.</p>
                 <h1 className='py-4 text-gray-700'>My name is Alex Hughes.</h1>
                 <p>I'm a freelance developer with a passion for efficiency and clean design. I use Next.js and Tailwind to bring ideas to life, while constantly acquiring new skills to create better products.</p>
-                <div className='flex items-center justify-center space-x-6 max-w-[330px] m-auto py-4'>
+                <div className='flex items-center justify-center space-x-6 max-w-[330px] m-auto mt-4 py-4'>
                     <Link href='https://www.linkedin.com/in/alex-hughes-ah77/'>
                         <div className='rounded-full shadow-lg shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                             <FaLinkedinIn />

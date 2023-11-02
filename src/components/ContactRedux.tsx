@@ -24,10 +24,10 @@ export default function ContactRedux() {
                 />
               </div>
 
-              <div>
+              <div className="mt-8">
                 <h2 className="py-2">Alex Hughes</h2>
                 <p className="text-xl">Freelance Next.js Developer</p>
-                <p className="py-2">
+                <p className="mt-6 py-2">
                   Whether you're seeking a full-time team member or require
                   contract-based support, I can help you achieve your goals with
                   efficient and responsive solutions.
@@ -41,7 +41,7 @@ export default function ContactRedux() {
             </div>
 
             <div>
-              <p className="uppercase pt-8 text-center">Connect</p>
+              <p className="uppercase pt-8 text-center text-xl">Connect</p>
               <div className="flex items-center justify-center space-x-6 py-4">
                 <Link href="https://www.linkedin.com/in/alex-hughes-ah77/">
                   <div className="rounded-full shadow-lg shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
