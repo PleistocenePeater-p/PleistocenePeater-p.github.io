@@ -4,7 +4,7 @@ import React from 'react'
 // import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi'
-import ContactForm from './ContactForm'
+// import ContactForm from './ContactForm'
 
 const Contact = () => {
   return (
@@ -57,7 +57,7 @@ const Contact = () => {
           {/* right */}
           <div className='col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4'>
             <div className='p-4'>
-                <ContactForm />
+                {/* <ContactForm /> */}
             </div>
           </div>
         </div>

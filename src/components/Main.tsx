@@ -11,7 +11,7 @@ export default function Main() {
             <div>
                 <p className='uppercase text-sm tracking-widest text-gray-600'>Let's build.</p>
                 <h1 className='py-4 text-gray-700'>My name is Alex Hughes.</h1>
-                <p>I'm a fullstack developer with a passion for efficiency and clean design. I use Next.js and Tailwind to bring ideas to life, while constantly acquiring new skills to create better products.</p>
+                <p>I'm a freelance developer with a passion for efficiency and clean design. I use Next.js and Tailwind to bring ideas to life, while constantly acquiring new skills to create better products.</p>
                 <div className='flex items-center justify-center space-x-6 max-w-[330px] m-auto py-4'>
                     <Link href='https://www.linkedin.com/in/alex-hughes-ah77/'>
                         <div className='rounded-full shadow-lg shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
@@ -23,10 +23,12 @@ export default function Main() {
                             <FaGithub />
                         </div>
                     </Link>
+                    <Link href='mailto:alexhughesresume@gmail.com'>
+                        <div className='rounded-full shadow-lg shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                            <AiOutlineMail />
+                        </div>
+                    </Link>
                     {/* <div className='rounded-full shadow-lg shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                        <AiOutlineMail />
-                    </div>
-                    <div className='rounded-full shadow-lg shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                         <BsFillPersonLinesFill />
                     </div> */}
                 </div>

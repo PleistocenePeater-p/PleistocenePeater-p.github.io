@@ -1,7 +1,6 @@
 "use client"
 
-import { FormEvent, useState } from "react";
-import { NextResponse } from "next/server";
+import { ChangeEvent, FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 
 const initState = {
@@ -16,32 +15,38 @@ export default function ContactForm() {
 
   const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    console.log(JSON.stringify(data))
+    console.log("Here's the data baby", JSON.stringify(data))
     const { name, email, msg } = data
     try {
-        const r = await fetch ("http://localhost:3000/api/contact", {
+        const res = await fetch("/api/contact", {
             method: "POST",
+            headers: {
+                "content-type": "application/json",
+            },
             body: JSON.stringify({
                 name, 
                 email, 
                 msg,
-            }),
-            headers: {
-                "content-type": "application/json",
-            }
+            })
         });
 
-        const res = await r.json();
-        if (res.success) {
-            alert("Email sent")
-        } else {
-            throw new Error();
-        }
+        const result = await res.json();
+        console.log(result)
 
     } catch (error: any) {
         console.error("Error", error)
     }
   }
+
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const name = e.target.name
+    setData(prevData => ({
+        ...prevData,
+        [name]: e.target.value
+    }))
+  }
+
+  const canSave = [...Object.values(data)].every(Boolean)
 
   return (
     <form onSubmit={onSubmit}>
@@ -58,23 +63,25 @@ export default function ContactForm() {
       <div className="flex flex-col py-2">
         <label className="uppercase text-sm py-2">Name</label>
         <input
-        //   onChange={(e) => setName(e.target.value)}
-          name="name"
-          maxLength={100}
-          required
           className="border-2 rounded-lg p-3 flex border-gray-300"
           type="text"
+          required
+          name="name"
+          pattern="([A-Z])[\w+.]{1,}"
+          value={data.name}
+          onChange={handleChange}
         />
       </div>
       <div className="flex flex-col py-2">
         <label className="uppercase text-sm py-2">Email</label>
         <input
-        //   onChange={(e) => setEmail(e.target.value)}
-          name="email"
-          maxLength={100}
-          required
           className="border-2 rounded-lg p-3 flex border-gray-300"
           type="email"
+          required
+          name="email"
+          pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+          value={data.email}
+          onChange={handleChange}
         />
       </div>
       {/* <div className='flex flex-col py-2'>
@@ -84,16 +91,19 @@ export default function ContactForm() {
       <div className="flex flex-col py-2">
         <label className="uppercase text-sm py-2">Message</label>
         <textarea
-        //   onChange={(e) => setMsg(e.target.value)}
-          name="message"
-          minLength={10}
-          maxLength={500}
-          required
           className="border-2 rounded-lg p-3 border-gray-300"
+          required
+          name="msg"
+          maxLength={500}
           rows={6}
+          value={data.msg}
+          onChange={handleChange}
         ></textarea>
       </div>
-      <button className="w-full p-4 text-gray-100 mt-4">Send</button>
+      <button 
+          className="w-full p-4 text-gray-100 mt-4" 
+          disabled={!canSave}
+        >Send</button>
     </form>
   );
 };

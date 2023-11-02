@@ -1,6 +1,6 @@
 // `app/page.tsx` is the UI for the `/` URL
 import About from "@/components/About"
-import Contact from "@/components/Contact"
+import ContactRedux from "@/components/ContactRedux"
 import Main from "@/components/Main"
 import Navbar from "@/components/Navbar"
 import Projects from "@/components/Projects"
@@ -19,7 +19,7 @@ export default function Page() {
     <About />
     <Skills />
     <Projects />
-    <Contact />
+    <ContactRedux />
     </div>
   )
 }
