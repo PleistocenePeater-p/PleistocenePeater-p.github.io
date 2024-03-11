@@ -4,6 +4,7 @@ import Link from 'next/link'
 import ProjectItem from './ProjectItem'
 import novelnest from 'public/assets/projects/novelnest.png'
 import kavorka from 'public/assets/projects/kavorka.png'
+import scoopers from 'public/assets/projects/scoopers.png'
 
 function Projects() {
   return (
@@ -25,6 +26,12 @@ function Projects() {
             backgroundImg={kavorka}
             builtWith='MongoDB | Express | Node'
             projectUrl="/kavorka"
+          />
+          <ProjectItem
+            title='Scooper Mcquades'
+            backgroundImg={scoopers}
+            builtWith='Next.js | Tailwind CSS | React'
+            projectUrl="/scoopers"
           />
         </div>
       </div>

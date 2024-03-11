@@ -3,6 +3,7 @@ import React from "react";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import { AiOutlineMail } from "react-icons/ai";
+// import { BsFillPersonLinesFill } from 'react-icons/bs'
 
 export default function ContactRedux() {
   return (
@@ -24,10 +25,10 @@ export default function ContactRedux() {
                 />
               </div>
 
-              <div className="mt-8">
+              <div>
                 <h2 className="py-2">Alex Hughes</h2>
                 <p className="text-xl">Freelance Next.js Developer</p>
-                <p className="mt-6 py-2">
+                <p className="mt-2 py-2">
                   Whether you're seeking a full-time team member or require
                   contract-based support, I can help you achieve your goals with
                   efficient and responsive solutions.
@@ -37,31 +38,30 @@ export default function ContactRedux() {
                   enhance an existing one, I'm ready to bring your ideas to
                   life.
                 </p>
-              </div>
-            </div>
+                <div>
+                  <p className="uppercase pt-4 text-center text-xl">Connect</p>
+                  <div className="flex items-center justify-center space-x-6 py-4">
+                    <Link href="https://www.linkedin.com/in/alex-hughes-ah77/">
+                      <div className="rounded-full shadow-lg shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                        <FaLinkedinIn />
+                      </div>
+                    </Link>
+                    <Link href="https://github.com/PleistocenePeater-p">
+                      <div className="rounded-full shadow-lg shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                        <FaGithub />
+                      </div>
+                    </Link>
+                    <Link href="mailto:alexhughesresume@gmail.com">
+                      <div className="rounded-full shadow-lg shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                        <AiOutlineMail />
+                      </div>
+                    </Link>
 
-            <div>
-              <p className="uppercase pt-8 text-center text-xl">Connect</p>
-              <div className="flex items-center justify-center space-x-6 py-4">
-                <Link href="https://www.linkedin.com/in/alex-hughes-ah77/">
-                  <div className="rounded-full shadow-lg shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <FaLinkedinIn />
-                  </div>
-                </Link>
-                <Link href="https://github.com/PleistocenePeater-p">
-                  <div className="rounded-full shadow-lg shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <FaGithub />
-                  </div>
-                </Link>
-                <Link href="mailto:alexhughesresume@gmail.com">
-                  <div className="rounded-full shadow-lg shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <AiOutlineMail />
-                  </div>
-                </Link>
-
-                {/* <div className="rounded-full shadow-lg shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                    {/* <div className="rounded-full shadow-lg shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                   <BsFillPersonLinesFill />
                 </div> */}
+                  </div>
+                </div>
               </div>
             </div>
           </div>
