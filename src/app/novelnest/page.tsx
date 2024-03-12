@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from "@/components/Navbar"
 import Image from 'next/image'
-import nnImg from 'public/assets/projects/novelnest.png'
+import nnImg from '../../../public/assets/projects/novelnest.png'
 import {RiRadioButtonFill} from 'react-icons/ri'
 import Link from 'next/link'
 

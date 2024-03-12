@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from "@/components/Navbar"
 import Image from 'next/image'
-import kavorkaImg from 'public/assets/projects/kavorka.png'
+import kavorkaImg from '../../../public/assets/projects/kavorka.png'
 import {RiRadioButtonFill} from 'react-icons/ri'
 import Link from 'next/link'
 

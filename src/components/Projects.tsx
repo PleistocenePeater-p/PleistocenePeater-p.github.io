@@ -2,9 +2,9 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import ProjectItem from './ProjectItem'
-import novelnest from 'public/assets/projects/novelnest.png'
-import kavorka from 'public/assets/projects/kavorka.png'
-import scoopers from 'public/assets/projects/scoopers.png'
+import novelnest from '../../public/assets/projects/novelnest.png'
+import kavorka from '../../public/assets/projects/kavorka.png'
+import scoopers from '../../public/assets/projects/scoopers.png'
 
 function Projects() {
   return (
@@ -30,7 +30,7 @@ function Projects() {
           <ProjectItem
             title='Scooper Mcquades'
             backgroundImg={scoopers}
-            builtWith='Next.js | Tailwind CSS | React'
+            builtWith='Next.js | React | Tailwind CSS'
             projectUrl="/scoopers"
           />
         </div>

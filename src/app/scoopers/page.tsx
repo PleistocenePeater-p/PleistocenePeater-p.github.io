@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from "@/components/Navbar"
 import Image from 'next/image'
-import scoopersImg from 'public/assets/projects/scoopers.png'
+import scoopersImg from '../../../public/assets/projects/scoopers.png'
 import {RiRadioButtonFill} from 'react-icons/ri'
 import Link from 'next/link'
 
@@ -15,7 +15,7 @@ const page = () => {
                 <Image className='absolute z-1' layout='fill' objectFit='cover' src={scoopersImg} alt='/' />
                 <div className='absolute top-[50%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[50%] text-white z-10 p-2'>
                     <h2 className='py-2'>Scooper Mcquades</h2>
-                    <h3>Next.js | Tailwind CSS</h3>
+                    <h3>Next.js | React | Tailwind CSS</h3>
                 </div>
             </div>
 
