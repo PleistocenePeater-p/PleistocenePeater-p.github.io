@@ -5,6 +5,7 @@ import ProjectItem from './ProjectItem'
 import novelnest from '../../public/assets/projects/novelnest.png'
 import kavorka from '../../public/assets/projects/kavorka.png'
 import scoopers from '../../public/assets/projects/scoopers.png'
+import sparrow from '../../public/assets/projects/sparrow.png'
 
 function Projects() {
   return (
@@ -32,6 +33,12 @@ function Projects() {
             backgroundImg={scoopers}
             builtWith='Next.js | React | Tailwind CSS'
             projectUrl="/scoopers"
+          />
+          <ProjectItem
+            title='Sparrow Detector 1.0'
+            backgroundImg={sparrow}
+            builtWith='Python | YOLOv8 | Ultralytics | Streamlit'
+            projectUrl="/sparrowdetector"
           />
         </div>
       </div>
