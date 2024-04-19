@@ -23,15 +23,15 @@ const page = () => {
                 <div className='col-span-4'>
                     <p>Project</p>
                     <h2>Overview</h2>
-                    <p className='mt-2'>
+                    <p className='my-8 mx-16'>
                         <p>
                         This is a proof of concept using two white label technologies for performing object detection. 
                         This project is to be combined with a later one, featuring an ESP32-CAM and servos.
                         </p><br/>
                         <p>
-                        English House Sparrows (EHS) are a nuisance, thriving year-round in the variety of climates in North America. 
-                        Like other invasives, they can invade nests, then peck and destroy local bird eggs, impacting biodiversity, conservation efforts, and chicken egg-laying operations.
-                        Area denial, involving netting and fencing can be unfeasible. 
+                        English House Sparrows (EHS) are a nuisance, thriving year-round in the variety of climates of North America. 
+                        Like other invasives, they peck and destroy local bird eggs, impacting biodiversity, conservation efforts, and chicken egg-laying operations.
+                        Area denial, involving netting and fencing, can be unfeasible. 
                         Deterring congregation by removing food sources tends to be the easiest and most rapid solution. 
                         However, in the case of attracting native populations and passively feeding livestock, where food is intentionally made available, or available to non-specific/similar species, this method is inapplicable.
                         </p><br/>
@@ -40,19 +40,18 @@ const page = () => {
                         </p><br/>
                         <p>
                         Minimum viable product was to detect English House Sparrows and to do so expeditiously.
-                        I prioritized speed; to quickly achieve MVP with exposure to computer vision concepts, libraries, terminology, ML engineering principles, and recent developments, deferring an expectation of proficiency.
-                        I therefore permitted myself to use white label platforms for this project.
+                        Ideally, I could quickly achieve MVP with white label platforms, with exposure to their inner workings: computer vision concepts, libraries, terminology, ML engineering principles, and any recent developments in these circles.
                         </p><br/>
                         <p>
                         After surveying available technologies, I aspirationally chose the recent YOLOv8 as the base computer vision model for its ease of use, Ultralytics for swiftly training and exporting a model, Flask for the Python backend, and Next.js as the frontend to deploy to Vercel.
                         <br /><br />
-                        After building comfortability with a laptop webcam, I trained (very briefly, 18% is hilarious) and exported an MVP model and attempted to integrate Flask with Next.js.
+                        I trained (comically abbreviated) and exported an MVP model, then attempted to integrate Flask with Next.js.
                         Unfortunately, Next.js presently integrates with Python 3.9 and below.
                         Given the number of dependencies and in the interest of time, I dropped Flask and Next.js to search for a suitable web host for deployment.
-                        Fortunately, Streamlit specializes in hosting data apps and possesses built-in styling for quickly creating an interface - a great fit for MVP.
+                        Streamlit was a great fit as the platform specializes in hosting data apps and possesses built-in styling for quickly creating an upload interface.
                         </p><br/>
                         <p>
-                        A significant portion of time was spent debugging, eavesdropping on StackOverflow, reading Flask, Next.js, Ultralytics, and OpenCV forums on Github, and absorbing the respective Docs and more to complete this project.
+                        Much time was spent debugging, eavesdropping on StackOverflow, reading Flask, Next.js, Ultralytics, and OpenCV forums on Github, and absorbing the respective Docs and more to complete this project.
                         </p>
                     </p>
                     <Link href='https://sparrow-detector.streamlit.app/'><button className='px-8 py-2 mt-4 mr-8'>Site</button></Link>
