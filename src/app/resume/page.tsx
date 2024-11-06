@@ -7,7 +7,7 @@ const page = () => {
       <Navbar />
       {/* <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'> */}
         <div className='pdf-container'>
-          <iframe className='pdf-iframe mt-2' src='assets/pdfs/resume2.pdf'/>
+          <iframe className='pdf-iframe mt-2' src='assets/pdfs/TechnicalResumeForWebsite.pdf'/>
         </div>
       {/* </div> */}
       
